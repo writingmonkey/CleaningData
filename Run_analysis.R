@@ -10,7 +10,7 @@
 
 # Lets get the working directory first
 getwd()
-setwd(Users/lw2134/Desktop/ZKWDataSci)
+setwd("/Users/lw2134/Desktop/zarakahan/datasciencecoursera/AssignmentWeek4")
 
 #Loading libraries
 library(tidyr)
@@ -73,7 +73,7 @@ colNames <- colnames(fullDataCombined);
 mean_and_standard_deviation <-fullDataCombined[,grepl("mean|std|subId|activityId",colnames(fullDataCombined))]
 
 
-# Task 3Use descriptive activity names to name the activities in the data set
+# Task 3. Use descriptive activity names to name the activities in the data set
 
 #Lets clean up the variable names
 names(mean_and_standard_deviation) <- gsub("\\(|\\)", "", names(mean_and_standard_deviation), perl  = TRUE)
